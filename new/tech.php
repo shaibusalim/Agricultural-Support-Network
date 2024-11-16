@@ -99,7 +99,7 @@
 
     <header>
   <div class="header">
-   <a style="background-color: black;" href="index.html" class="logo"><img style="height: 80px;" src="../nimages/asn.png" alt="logo"></a>
+   <a style="background-color: black;" class="logo"><img style="height: 80px;" src="../nimages/asn.png" alt="logo"></a>
    <br>
     <div class="header-right">
     

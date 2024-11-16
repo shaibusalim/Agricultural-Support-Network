@@ -242,7 +242,7 @@ $tractorsCount = $rowTractors['tractors'];
                                                          </li>
                                                         <li>
                                                         <img src="../nimages/market1.png" width="50" height="50">
-                                                            <a href="../market/fertilizers.php">Market Place</a>
+                                                            <a>Market Place</a>
                                                         </li>
                                                         <li>
                                                         <a href="../article/articles-index.php">

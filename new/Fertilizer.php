@@ -105,7 +105,7 @@
 
 <header>
 <div class="header">
-	 <a href="index.html" class="logo"><img style="height: 80px;" src="../nimages/asn.png" alt="logo"></a>
+	 <a class="logo"><img style="height: 80px;" src="../nimages/asn.png" alt="logo"></a>
 	 <br>
 	  <div class="header-right">
 	   <a style="font-size: 25px;" href="tech.php">Tech</a>
