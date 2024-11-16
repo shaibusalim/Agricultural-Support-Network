@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Task Scheduling Calendar</title>
+ <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 1px;
+      background-color: #f8f9fa;
+    }
+
+    .cell {
+      padding: 5px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .selected {
+      background-color: #007bff;
+      color: white;
+    }
+ </style>
+</head>
+<body>
+ <div class="container">
+    <!-- Generate the calendar grid -->
+ </div>
+ <button onclick="scheduleTask()">Schedule Task</button>
+
+ <script>
+    const currentDate = new Date();
+    const currentMonth = currentDate.getMonth();
+    const currentYear = currentDate.getFullYear();
+    const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+    let selectedDate;
+
+    const container = document.querySelector('.container');
+
+    for (let i = 0; i < daysInMonth; i++) {
+      const cell = document.createElement('div');
+      cell.classList.add('cell');
+      cell.textContent = i + 1;
+      cell.addEventListener('click', () => {
+        if (selectedDate) {
+          selectedDate.classList.remove('selected');
+        }
+        selectedDate = cell;
+        selectedDate.classList.add('selected');
+      });
+      container.appendChild(cell);
+    }
+
+    function scheduleTask() {
+      if (!selectedDate) {
+        alert('Please select a date');
+        return;
+      }
+      alert(`Task scheduled for ${selectedDate.textContent}`);
+    }
+ </script>
+</body>
+</html>

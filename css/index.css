@@ -1,0 +1,370 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* START OF NEV STYLES */
+header nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 5px 10px 25px 5px rgba(0,0,0,0.3);
+    border-style: hidden;
+}
+.nav-list{
+    display: flex;
+}
+.nav-list li{
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+/* END OF NEV STYLES */
+
+/* START OF CAROUSEL STYLES  */
+.carousel-item{
+    
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.image-container {
+    position: relative;
+  }
+  .image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+  }
+.image-container img{
+    width: auto;
+    height:100vh;
+    z-index: 2;
+}
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+    color: #fff; 
+    z-index: 3;
+}
+ .carousel-caption h5,
+    .carousel-caption p {
+      margin: 0;
+    }
+
+.carousel-caption h5{
+    font-size: 4rem;
+    font-style: oblique;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    border-top: 2px solid white;
+    
+}
+.carousel-caption h4{
+    font-size: 2.6rem;
+    border-bottom: 2px solid white;
+}
+.carousel-caption P{
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+/* END OF CAROUSEL STYLES  */
+
+/* START OF SECOND SECTION STYLES  */
+.second-section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right, #27b10b, rgb(153, 253, 153), rgb(22, 122, 61));
+}
+.second-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+}
+.second-container-text h3{
+    font-size: 4.5rem;
+    font-weight: bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.second-container-text p{
+    font-size: 1.5rem;
+}
+.second-container-text{
+    width: 530px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.second-container-button{
+    display: flex;
+}
+.second-container-button button{
+    width: 130px;
+    height: 70px;
+    margin-right: 10px;
+    font-size: 1.3rem;
+    border-style: hidden;
+    box-sizing: border-box;
+}
+/* END OF SECOND SECTION STYLES  */
+
+/* START OF SECOND SECTION CONTAINER CONTENT STYLES  */
+.second-container-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    max-width: 60%;
+
+}
+
+.second-container-content > div {
+    border: 2px solid green;
+    width: 240px;
+    height: 289px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.3);
+    border-style: hidden;
+    text-align: center; 
+}
+.second-container-content > div p{
+    text-align: center;
+    padding: 5px;
+}
+
+
+.second-container-content > div button{
+   width: 240px;
+   height: 50px;
+   border: none;
+}
+.second-container-content > div button:hover{
+    background: linear-gradient(to right, rgb(94, 94, 240));
+}
+
+.second-container-content div img{
+    margin-top: 7px;
+}
+
+
+/* END OF SECOND SECTION CONTAINER CONTENT STYLES  */
+
+
+/* Begining of Third Section Styles   */
+
+.third-section{
+    width: 100%;
+   height: 90vh;
+}
+.third-section-content{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    background-image: url(./images/bg4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+.third-section-image{
+    z-index: 2;
+    text-align: center;
+  
+}
+.third-section-image h3{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.third-section-image p{
+    font-weight: bolder;
+}
+.third-section-maincontent{
+    max-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    height: 80vh;
+    position: absolute;
+    left: 400px;
+    margin-top: 40px;
+   
+}
+.third-section-grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 50%;
+    width: 500px;
+    z-index: 5;
+    position: relative;
+    left: 100px;
+}
+.third-section-grid div{
+   width: 170px;
+   height: 160px;
+   padding: 10px;
+   border: 1px solid rgb(205, 255, 192);
+   margin: 10px;
+   text-align: center;
+   background-color: rgb(110, 219, 110);
+}
+.third-section-contact{
+    box-sizing: border-box;
+    box-shadow: 5px 10px 20px 5px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height:490px;
+    padding: 10px;
+    background-color: rgb(75, 74, 74);
+    color: white;
+}
+.third-section-contact h5{
+    font-size: 1.6rem;
+}
+.third-section-contact p{
+    font-size: 18px;
+}
+.contact-input{
+    width: 300px;
+    height: 50px;
+    border-style: hidden;
+    border-bottom: 1px solid black;
+    border-bottom-color: white;
+    background-color: rgb(75, 74, 74);
+   
+}
+.message-box{
+    width: 300px;
+    height: 70px;
+    border-style: hidden;
+    border-bottom: 1px solid black;
+    border-bottom-color: white;
+    background-color: rgb(75, 74, 74);
+}
+.third-section-contact form button{
+    width: 100px;
+    height: 40px;
+}
+
+
+
+
+/* End of Third Section Styles   */
+
+
+/* For animation transition */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+#text{
+    font-size: 1.6rem;
+}
+
+.third-section-image {
+    position: relative;
+    left: -100%; /* Move off-screen to the left */
+    opacity: 0;
+    transition: opacity 1s, left 1.5s; /* Add transition effects */
+  }
+  
+  /* Apply animation when the 'active' class is added */
+  .third-section-image.active {
+    left: 0; /* Move to the original position */
+    opacity: 1;
+  }
+
+
+
+
+
+
+/* Initially hide the description 
+.user-group {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.user-group .description {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.user-group:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: opacity 0.3s ease;
+}
+
+.user-group:hover:before {
+    opacity: 1;
+}
+
+.user-group:hover .description {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+*/
+
+
+  @media  (max-width: 768px){
+    .third-section-maincontent{
+        max-width: 70%;
+    }
+  }
+
+
+
